@@ -11,5 +11,8 @@ https://github.com/digitalinnovationone/lab-padroes-projeto-spring
 - OpenFeign
 - Lombok
 
+### Outras Bibliotecas utilizadas (adicionadas manualmente:
+- OpenApi
+
 ### Melhorias:
 - Uso do Lombok para minimizar código
