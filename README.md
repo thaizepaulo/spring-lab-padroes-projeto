@@ -16,3 +16,4 @@ https://github.com/digitalinnovationone/lab-padroes-projeto-spring
 
 ### Melhorias:
 - Uso do Lombok para minimizar código
+- Configuração do H2 para acesso pelo navegador
