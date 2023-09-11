@@ -11,3 +11,5 @@ https://github.com/digitalinnovationone/lab-padroes-projeto-spring
 - OpenFeign
 - Lombok
 
+### Melhorias:
+- Uso do Lombok para minimizar código
