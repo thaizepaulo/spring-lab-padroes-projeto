@@ -13,7 +13,6 @@ import lombok.Setter;
  * @see <a href="https://jsonschema2pojo.org">jsonschema2pojo.org</a>
  * @see <a href="https://viacep.com.br">viacep.com.br</a>
  *
- * @author thaize
  */
 
 @Getter
