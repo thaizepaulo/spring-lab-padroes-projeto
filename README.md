@@ -11,9 +11,11 @@ https://github.com/digitalinnovationone/lab-padroes-projeto-spring
 - OpenFeign
 - Lombok
 
-### Outras Bibliotecas utilizadas (adicionadas manualmente:
+### Outras Bibliotecas utilizadas (adicionadas manualmente):
 - OpenApi
 
 ### Melhorias:
-- Uso do Lombok para minimizar código
-- Configuração do H2 para acesso pelo navegador
+- Uso do Lombok para minimizar código.
+- Configuração do H2 para acesso pelo navegador.
+- Retornar objeto nulo do tipo Endereco quando não encontrado pelo ViaCep.
+- Utilização de DTO para envio de poucas informações para inserir e atualizar clientes.

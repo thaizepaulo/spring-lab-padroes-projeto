@@ -5,6 +5,7 @@ import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import one.digitalinnovation.gof.dto.EnderecoSalvarDto;
 
 /**
  * Os atributos desse modelo foram gerados automaticamente pelo site
@@ -33,4 +34,7 @@ public class Endereco {
     private String ddd;
     private String siafi;
 
+    public Endereco(EnderecoSalvarDto enderecoSalvarDto) {
+        this.cep = enderecoSalvarDto.getCep();
+    }
 }

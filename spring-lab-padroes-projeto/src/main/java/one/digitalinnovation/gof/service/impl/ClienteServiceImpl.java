@@ -1,5 +1,6 @@
 package one.digitalinnovation.gof.service.impl;
 
+import one.digitalinnovation.gof.dto.ClienteSalvarDto;
 import one.digitalinnovation.gof.model.Cliente;
 import one.digitalinnovation.gof.model.Endereco;
 import one.digitalinnovation.gof.repository.ClienteRepository;
@@ -45,14 +46,16 @@ public class ClienteServiceImpl implements ClienteService {
     }
 
     @Override
-    public Cliente inserir(Cliente cliente) {
+    public Cliente inserir(ClienteSalvarDto clienteSalvarDto) {
+        Cliente cliente = new Cliente(clienteSalvarDto);
         salvarClienteComCep(cliente);
         return cliente;
     }
 
     @Override
-    public Cliente atualizar(Long id, Cliente cliente) {
+    public Cliente atualizar(Long id, ClienteSalvarDto clienteSalvarDto) {
         // FIXME Buscar cliente por ID (caso exista)
+        Cliente cliente = new Cliente(clienteSalvarDto);
         Optional<Cliente> clienteBd = clienteRepository.findById(id);
         if (clienteBd.isPresent()) {
             cliente.setId(id);

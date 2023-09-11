@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import one.digitalinnovation.gof.dto.ClienteSalvarDto;
 
 @Getter
 @Setter
@@ -17,5 +18,10 @@ public class Cliente {
     private String nome;
     @ManyToOne
     private Endereco endereco;
+
+    public Cliente(ClienteSalvarDto clienteSalvarDto) {
+        this.nome = clienteSalvarDto.getNome();
+        this.endereco = new Endereco(clienteSalvarDto.getEndereco());
+    }
 
 }
